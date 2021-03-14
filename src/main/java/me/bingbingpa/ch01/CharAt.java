@@ -1,24 +1,23 @@
 package me.bingbingpa.ch01;
 
 public class CharAt {
- /**
-    ===================Problem===================
-    Input: 1->2->3,
-            8->8->8
-    Output: 1011
-    문자열처럼 생긴 음이 아닌 정수값 num1, num2(non-negative integers num1 and num2 represented as string)
-    문자열로 num1, num2 의 합을 return
-    ===================Note===================
-    1) num1및 둘 다의 길이 num2는 <1000입니다.
-    2) 둘 다 num1및 num2숫자 만 포함합니다 0-9.
-    3) num1및 둘 다 num2선행 0을 포함하지 않습니다
-    ===================문제 Format===================
-    class Solution {
-        public String solve(String num1, String num2) {
-        }
-    }
- **/
-
+    /**
+     * ===================Problem===================
+     * Input: 1->2->3,
+     *         8->8->8
+     * Output: 1011
+     * 문자열처럼 생긴 음이 아닌 정수값 num1, num2(non-negative integers num1 and num2 represented as string)
+     * 문자열로 num1, num2 의 합을 return
+     * ===================Note===================
+     * 1) num1및 둘 다의 길이 num2는 <1000입니다.
+     * 2) 둘 다 num1및 num2숫자 만 포함합니다 0-9.
+     * 3) num1및 둘 다 num2선행 0을 포함하지 않습니다
+     * ===================문제 Format===================
+     * class Solution {
+     *     public String solve(String num1, String num2) {
+     *     }
+     * }
+     */
     public static void main(String[] args) {
         String nums1 = "123";
         String nums2 = "888";
