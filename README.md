@@ -8,3 +8,5 @@
 - indexOf()
     - indexOf(String str) 문자의 위치를 리턴, 없으면 -1
     - indexOf(String str, int fromIndex) fromIndex 번째의 str 위치를 리턴
+### Array
+- Math.max()
