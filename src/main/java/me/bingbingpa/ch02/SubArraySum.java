@@ -1,5 +1,8 @@
 package me.bingbingpa.ch02;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SubArraySum {
     /**
      * ===================Problem===================
@@ -15,6 +18,7 @@ public class SubArraySum {
         int[] nums = {3, 4, 7, 2, -3, 1, 4, 2};
         int k = 7;
         System.out.println("result ================ " + subArraySum(nums, k));
+        System.out.println("result by map ================ " + subArraySumByMap(nums, k));
     }
 
     public static int subArraySum(int[] nums, int k) {
@@ -29,6 +33,23 @@ public class SubArraySum {
                     count++;
                 }
             }
+        }
+
+        return count;
+    }
+
+    public static int subArraySumByMap(int[] nums, int k) {
+        int count = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
+        int sum = 0;
+        for (int num : nums) {
+            sum += num;
+            if (map.containsKey(sum - k)) {
+                count += map.get(sum - k);
+            }
+
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
         }
 
         return count;
