@@ -26,3 +26,24 @@
                    {2,3},
                    {3,5}};
   ~~~
+### map
+- **keySet 방법**
+  ~~~ java
+  for (String key : map.keySet()) {
+      System.out.println("key : " + key + ", value : " + map.get(key));
+  }
+  ~~~
+- **entrySet 방법**
+  ~~~ java
+  for (Map.Entry<string, string> elem : map.entrySet()) {
+      System.out.println("key : " + elem.getKey() + ", value : " + elem.getValue());
+  }
+  ~~~
+- Iterator 방법
+  ~~~ java
+  Iterator<string> keys = map.keySet().iterator();
+  while (keys.hasNext()) {
+      String key = keys.next();
+      System.out.println("key : " + key + ", value : " + map.get(key));
+  }
+  ~~~
