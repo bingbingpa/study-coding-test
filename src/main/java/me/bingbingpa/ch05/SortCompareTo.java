@@ -1,6 +1,6 @@
 package me.bingbingpa.ch05;
 
-public class CompareTo {
+public class SortCompareTo {
     /**
      * ===================Problem===================
      * - 버전 번호를 version1하고 version2, 비교한다.

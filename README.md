@@ -57,3 +57,7 @@
       return A.compareTo(B);
   }
   ~~~
+- 오름차순 
+  ~~~ java
+  Collections.sort(List<T> list, (a, b) -> a.start - b.start);
+  ~~~
