@@ -47,3 +47,13 @@
       System.out.println("key : " + key + ", value : " + map.get(key));
   }
   ~~~
+### sort
+- compareTo
+  - A = B 이면 0
+  - A > B 이면 1
+  - A < B 이면 -1 
+  ~~~ java
+  public int compareTo() {
+      return A.compareTo(B);
+  }
+  ~~~
