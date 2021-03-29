@@ -1,12 +1,12 @@
 package me.bingbingpa.inflearn.interview._02_list;
 
-public class LinkedList {
+public class Reverse {
 
     private LinkedNode head;
     private LinkedNode tail;
 
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        Reverse list = new Reverse();
         list.add(new LinkedNode(1));
         list.add(new LinkedNode(2));
         list.add(new LinkedNode(3));
