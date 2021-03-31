@@ -1,7 +1,5 @@
 package me.bingbingpa.inflearn.interview._01_array;
 
-import me.bingbingpa.inflearn.basic.ch01.CharAt;
-
 public class ReverseString {
 
     public static void main(String[] args) {
