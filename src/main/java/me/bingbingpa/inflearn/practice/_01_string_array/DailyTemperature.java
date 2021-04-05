@@ -1,7 +1,6 @@
 package me.bingbingpa.inflearn.practice._01_string_array;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Stack;
 
 public class DailyTemperature {
@@ -13,8 +12,8 @@ public class DailyTemperature {
 
     /**
      * TODO 주어진 온도 배열에서 더 따뜻한 날까지의 인덱스를 배열로 리턴하라.
-     *  더 따뜻한 날이 없다면 0 을 넣는다.
-     *  참고: 온도 배열의 길이는 1 ~ 30000, 각 온도의 범위는 30 ~ 100
+     * 더 따뜻한 날이 없다면 0 을 넣는다.
+     * 참고: 온도 배열의 길이는 1 ~ 30000, 각 온도의 범위는 30 ~ 100
      * 예) input: [73, 74, 75, 71, 69, 72, 76, 73], output: [1, 1, 4, 2, 1, 1, 0, 0]
      */
     public int[] solution1(int[] temperatures) {
@@ -47,6 +46,6 @@ public class DailyTemperature {
             stack.push(i);
         }
 
-            return result;
+        return result;
     }
 }
