@@ -5,6 +5,8 @@ import java.util.Arrays;
 
 public class TestUnit {
     private static String methodName;
+    private static int index = 0;
+
     public static <T> void test(Class<T> classType) {
         T instance = createInstance(classType);
         System.out.println("==========================START=======================================");
@@ -12,6 +14,7 @@ public class TestUnit {
             if (f.getAnnotation(CustomTest.class) != null) {
                 try {
                     methodName = f.getName();
+                    index = 0;
                     f.setAccessible(true);
                     f.invoke(instance);
 //                    Object resultType = f.invoke(instance);
@@ -37,7 +40,7 @@ public class TestUnit {
 //    }
 
     public static void printMessage(boolean testResult) {
-        String message = "CustomTest ==== methodName: " + methodName + ", result: " + testResult;
+        String message = "CustomTest ==== methodName(" + index++ + "):" + methodName + ", result: " + testResult;
         if (!testResult) {
             System.err.println(message);
             return;
