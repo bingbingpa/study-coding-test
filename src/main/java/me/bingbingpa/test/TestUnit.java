@@ -3,10 +3,16 @@ package me.bingbingpa.test;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 
+/**
+ * 코딩 테스트 TDD 를 위한 클래스
+ */
 public class TestUnit {
     private static String methodName;
     private static int index = 0;
 
+    /**
+     * 해당 클래스에서 @CustomTest 애노테이션이 붙은 메소드를 실행
+     */
     public static <T> void test(Class<T> classType) {
         T instance = createInstance(classType);
         System.out.println("==========================START=======================================");
@@ -17,11 +23,6 @@ public class TestUnit {
                     index = 0;
                     f.setAccessible(true);
                     f.invoke(instance);
-//                    Object resultType = f.invoke(instance);
-                    // return 타입 Boolean 인 메소드에 대해서만 메시지 출력
-//                    if (resultType instanceof Boolean) {
-//                        printMessage(f.getName(), (Boolean)resultType);
-//                    }
                 } catch (IllegalAccessException | InvocationTargetException e) {
                     System.out.println("reflection error =========== " + e.getMessage());
                 }
@@ -30,15 +31,9 @@ public class TestUnit {
         System.out.println("===========================END========================================");
     }
 
-//    public static void printMessage(String methodName, boolean testResult) {
-//        String message = "CustomTest ==== methodName: " + methodName + ", result: " + testResult;
-//        if (!testResult) {
-//            System.err.println(message);
-//            return;
-//        }
-//        System.out.println(message);
-//    }
-
+    /**
+     * 테스트 결과에 따른 콘솔 메시지 출력
+     */
     public static void printMessage(boolean testResult) {
         String message = "CustomTest ==== methodName(" + index++ + "):" + methodName + ", result: " + testResult;
         if (!testResult) {
@@ -48,6 +43,9 @@ public class TestUnit {
         System.out.println(message);
     }
 
+    /**
+     *  해당 클래스 인스턴스 생성
+     */
     private static <T> T createInstance(Class<T> classType) {
         try {
             return classType.getConstructor((Class<?>[]) null).newInstance();
