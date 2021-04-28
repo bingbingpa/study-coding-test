@@ -1,15 +1,15 @@
 package me.bingbingpa.inflearn.practice._04_graph;
 
-public class NumberOfIsland_dfs {
+public class NumberOfIslandDFS {
     public static void main(String[] args) {
-        NumberOfIsland_dfs numberOfIsland_dfs = new NumberOfIsland_dfs();
+        NumberOfIslandDFS numberOfIslandDFS = new NumberOfIslandDFS();
         char[][] grid= {
                 {'1','1','0','0','0'},
                 {'1','1','0','0','0'},
                 {'0','0','1','0','0'},
                 {'0','0','0','1','1'}
         };
-        System.out.println("result ================= " + numberOfIsland_dfs.solution(grid)); // output 3
+        System.out.println("result ================= " + numberOfIslandDFS.solution(grid)); // output 3
     }
 
     /**
@@ -22,7 +22,7 @@ public class NumberOfIsland_dfs {
 
         int count = 0;
         for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
+            for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == '1') {
                     count++;
                     dfs(grid, i, j);
