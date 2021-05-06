@@ -12,6 +12,8 @@ public class SearchInsertPosition {
      * input [1,4,5,6], target: 3, output: 1
      */
     public static int solution1(int[] nums, int target) {
+        // 시간 복잡도: O(N)
+        // 공간 복잡도: O(1)
         int index = 0;
         int length = nums.length;
         while (index < length) {
@@ -24,6 +26,8 @@ public class SearchInsertPosition {
     }
 
     public static int solution2(int[] nums, int target) {
+        // 시간 복잡도: O(logN)
+        // 공간 복잡도: O(1)
         int low = 0;
         int high = nums.length - 1;
 
