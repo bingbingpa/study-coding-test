@@ -16,11 +16,10 @@ public class WordSearch {
 
     /**
      * TODO 2차원 문자 배열과 단어 문자열이 주어지는데 문자 배열에 인접한 문자의 조합 입력으로 주어진 단어를 만들 수 있는지 확인하라.
-     * TDD
-     * 2차원 그리드를 탐색하기
-     * 상하좌우 탐색하기
      */
     public static boolean solution(char[][] board, String word) {
+        // 시간 복잡도: O(M*N*4^L) M*N 은 board 의 크기, L 은 입력 문자열의 길이
+        // 공간 복잡도: O(1)
         if (!isValid(board, word)) {
             return false;
         }
