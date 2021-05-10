@@ -1,4 +1,4 @@
-package me.bingbingpa.book.쓰면서_익히는_알고리즘과_자료구조._01_string;
+package me.bingbingpa.book.쓰면서_익히는_알고리즘과_자료구조._01_array;
 
 import java.util.Arrays;
 import java.util.Set;
