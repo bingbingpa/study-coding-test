@@ -59,6 +59,19 @@ public class BinarySearchTree {
         }
     }
 
+    public Node insertRec(Node node, int data) {
+        if (node == null) {
+            node = new Node(data);
+        } else {
+            if (node.data > data) {
+                node.left = insertRec(node.left, data);
+            } else {
+                node.right = insertRec(node.right, data);
+            }
+        }
+        return node;
+    }
+
     public boolean find(int data) {
         return findData(this.root, data);
     }
@@ -128,19 +141,6 @@ public class BinarySearchTree {
     private Node findMinNode(Node node) {
         while (node.left != null) {
             node = node.left;
-        }
-        return node;
-    }
-
-    private Node insertRec(Node node, int data) {
-        if (node == null) {
-            node = new Node(data);
-        } else {
-            if (node.data > data) {
-                node.left = insertRec(node.left, data);
-            } else {
-                node.right = insertRec(node.right, data);
-            }
         }
         return node;
     }
