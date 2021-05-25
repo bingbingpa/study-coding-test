@@ -1,4 +1,4 @@
-package me.bingbingpa.baekjoon;
+package me.bingbingpa.baekjoon.recursion;
 
 public class ZRecursive {
     private static int count;

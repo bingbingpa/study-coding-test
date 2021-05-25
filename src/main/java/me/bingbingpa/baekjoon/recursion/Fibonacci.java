@@ -1,4 +1,4 @@
-package me.bingbingpa.baekjoon;
+package me.bingbingpa.baekjoon.recursion;
 
 public class Fibonacci {
     private static long[] fibo;
