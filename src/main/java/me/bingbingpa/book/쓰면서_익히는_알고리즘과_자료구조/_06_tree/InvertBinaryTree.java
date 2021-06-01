@@ -20,7 +20,7 @@ public class InvertBinaryTree {
     }
 
     /**
-     * 이진 트리 반전
+     * TODO 이진 트리를 반전 하라.
      */
     public static Node solution1(Node root) {
         // 시간 복잡도: O(n)
