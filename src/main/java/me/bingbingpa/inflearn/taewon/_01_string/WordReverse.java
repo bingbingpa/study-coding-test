@@ -1,4 +1,4 @@
-package me.bingbingpa.inflearn.taewon.section1;
+package me.bingbingpa.inflearn.taewon._01_string;
 
 import java.util.ArrayList;
 import java.util.List;
