@@ -2,15 +2,15 @@ package me.bingbingpa.inflearn.taewon._02_array;
 
 import java.util.Scanner;
 
-public class NumberOfDecimals {
+public class NumberOfPrimes {
 
 //    public static void main(String[] args) {
-//        NumberOfDecimals T = new NumberOfDecimals();
+//        NumberOfPrimes T = new NumberOfPrimes();
 //        System.out.println(T.solution(20));
 //    }
 
     public static void main(String[] args) {
-        NumberOfDecimals T = new NumberOfDecimals();
+        NumberOfPrimes T = new NumberOfPrimes();
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         System.out.println(T.solution(num));
