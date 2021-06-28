@@ -5,4 +5,9 @@
 - CaseConversion, FindLetters
 
 #### section2
+
 - ClassPresident, Fibonacci, GridMaxSum, LargeNumber, Mentoring, MountainPeak, NumberOfPrimes, ReversePrimes
+
+#### section3
+
+- Subsequence, TwoArraysConcat, **MaxSubSequence**
