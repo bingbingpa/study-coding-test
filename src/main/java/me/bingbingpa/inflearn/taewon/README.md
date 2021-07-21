@@ -30,4 +30,4 @@
 
 ### section8(dfs, bfs 활용)
 
-- SameSumSubset
+- SameSumSubset, DoublePermutation
