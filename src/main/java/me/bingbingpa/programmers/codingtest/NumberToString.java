@@ -1,4 +1,4 @@
-package me.bingbingpa.programmers.level1;
+package me.bingbingpa.programmers.codingtest;
 
 import java.util.Map;
 
