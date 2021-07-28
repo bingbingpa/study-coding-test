@@ -1,15 +1,16 @@
-package me.bingbingpa.programmers.codingtest;
+package me.bingbingpa.programmers.level1;
 
 import java.util.Map;
 
 public class NumberToString {
     public static void main(String[] args) {
         NumberToString numberToString = new NumberToString();
-        System.out.println("result ============= " + numberToString.solution("one4seveneight"));
+        System.out.println("result ============= " + numberToString.answer("one4seveneight"));
     }
 
     /**
-     * TODO 입력 문자열을 숫자로 변환하여 리턴하라.
+     * TODO 숫자 문자열과 영단어
+     * https://programmers.co.kr/learn/courses/30/lessons/81301
      */
     public int solution(String str) {
         StringBuilder sb = new StringBuilder();
@@ -41,5 +42,16 @@ public class NumberToString {
         }
 
         return Integer.parseInt(sb.toString());
+    }
+
+    public int answer(String str) {
+        String[] digits = {"0","1","2","3","4","5","6","7","8","9"};
+        String[] alphabets = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+
+        for (int i = 0; i < 10; i++) {
+            str = str.replaceAll(alphabets[i], digits[i]);
+        }
+
+        return Integer.parseInt(str);
     }
 }
