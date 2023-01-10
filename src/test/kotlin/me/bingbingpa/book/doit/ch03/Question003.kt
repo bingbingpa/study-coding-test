@@ -32,7 +32,7 @@ private fun solution(target: IntArray, numbers: IntArray): Int {
     for (i in 1 until target.size) {
         calculatedArray[i] = calculatedArray[i - 1] + target[i]
     }
-    val first = calculatedArray[numbers[1] - 1]
-    val last = if (numbers[0] == 1) 0 else calculatedArray[numbers[0] - 2]
-    return first - last
+    val end = calculatedArray[numbers[1] - 1]
+    val start = if (numbers[0] == 1) 0 else calculatedArray[numbers[0] - 2]
+    return end - start
 }
