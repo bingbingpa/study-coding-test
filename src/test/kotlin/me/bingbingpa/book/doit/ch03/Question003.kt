@@ -1,6 +1,7 @@
 package me.bingbingpa.book.doit.ch03
 
 import org.assertj.core.api.Assertions
+import org.assertj.core.api.Assertions.*
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
@@ -14,7 +15,7 @@ class Question003 {
     @ParameterizedTest
     fun `구간 합 구하기`(numbers: IntArray, expected: Int) {
         val target = intArrayOf(5, 4, 3, 2, 1)
-        Assertions.assertThat(solution(target, numbers)).isEqualTo(expected)
+        assertThat(solution(target, numbers)).isEqualTo(expected)
     }
 
     private fun getParameters(): Stream<Arguments> {
