@@ -1,6 +1,5 @@
 package me.bingbingpa.book.doit.ch03
 
-import org.assertj.core.api.Assertions
 import org.assertj.core.api.Assertions.*
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
