@@ -60,7 +60,7 @@ fun main() {
     val A = IntArray(3)
     val i = 0
     val insertPoint = 0
-    for (j in i downTo insertPoint + 1) {
+    for (j in i..insertPoint + 1) {
         A[j] = A[j - 1]
     }
 }
