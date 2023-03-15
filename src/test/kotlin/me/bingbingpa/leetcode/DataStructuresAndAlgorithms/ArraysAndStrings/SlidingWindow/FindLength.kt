@@ -1,6 +1,6 @@
-package me.bingbingpa.leetcode.DataStructuresAndAlgorithms.ArraysAndStrings
+package me.bingbingpa.leetcode.DataStructuresAndAlgorithms.ArraysAndStrings.SlidingWindow
 
-import org.assertj.core.api.Assertions.assertThat
+import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
@@ -16,7 +16,7 @@ class FindLength {
     @MethodSource("getParameters")
     @ParameterizedTest
     fun `Find Length`(input: IntArray, k: Int, expected: Int) {
-        assertThat(solution(input, k)).isEqualTo(expected)
+        Assertions.assertThat(solution(input, k)).isEqualTo(expected)
     }
 
     private fun getParameters(): Stream<Arguments> {

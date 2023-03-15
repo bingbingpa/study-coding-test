@@ -1,6 +1,6 @@
-package me.bingbingpa.leetcode.DataStructuresAndAlgorithms.ArraysAndStrings
+package me.bingbingpa.leetcode.DataStructuresAndAlgorithms.ArraysAndStrings.TowPointers
 
-import org.assertj.core.api.Assertions.assertThat
+import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
@@ -17,7 +17,7 @@ class SquaresOfSortedArray {
     @MethodSource("getParameters")
     @ParameterizedTest
     fun `Squares of a Sorted Array`(input: IntArray, expected: IntArray) {
-        assertThat(solution(input)).isEqualTo(expected)
+        Assertions.assertThat(solution(input)).isEqualTo(expected)
     }
 
     private fun getParameters(): Stream<Arguments> {
