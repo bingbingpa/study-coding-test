@@ -1,7 +1,6 @@
 package me.bingbingpa.book.java_algorithm_interview.ch06
 
-import org.assertj.core.api.Assertions
-import org.assertj.core.api.Assertions.*
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 class P3_ReorderDataInLogFiles {
@@ -12,9 +11,9 @@ class P3_ReorderDataInLogFiles {
      * 2. 문자로 구성된 로그가 숫자 로그보다 앞에 오며, 문자 로그는 사전순으로 한다.
      * 3. 문자가 동일할 경우에는 식별자순으로 한다.
      * 4. 숫자 로그는 입력 순서대로 한다.
-     * https://leetcode.com/problems/reorder-data-in-log-files/
      * 입력: ["id1 8 1 8 1", "id2 art can", "id3 3 6", "id4 own kit dig", "id5 art zero"]
      * 출력: ["id2 art can", "id5 art zero", "id4 own kit dig", "id1 8 1 8 1", "id3 3 6"]
+     * @see <a href = "https://leetcode.com/problems/reorder-data-in-log-files/"> https://leetcode.com/problems/reorder-data-in-log-files/
      */
     @Test
     fun `로그 파일 재정렬`() {
@@ -67,7 +66,7 @@ private fun bookSolution(logs: Array<String>): Array<String> {
         }
     }
 
-    letterList.sortWith(Comparator { s1, s2 ->
+    letterList.sortWith { s1, s2 ->
         val s1x = s1.split(" ", limit = 2)
         val s2x = s2.split(" ", limit = 2)
         val compared = s1x[1].compareTo(s2x[1])
@@ -76,7 +75,7 @@ private fun bookSolution(logs: Array<String>): Array<String> {
         } else {
             compared
         }
-    })
+    }
     letterList.addAll(digitList)
 
     return letterList.toTypedArray()

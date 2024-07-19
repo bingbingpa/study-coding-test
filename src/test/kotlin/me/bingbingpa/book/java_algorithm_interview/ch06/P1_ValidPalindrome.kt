@@ -9,10 +9,10 @@ class P1_ValidPalindrome {
 
     /**
      * 주어진 문자열이 팰린드롬인지 확인하라. 대소문자를 구분하지 않으며, 영숫자(영문자와 숫자)만을 대상으로 한다.
-     * https://leetcode.com/problems/valid-palindrome/
+     * @see <a href="https://leetcode.com/problems/valid-palindrome/"> https://leetcode.com/problems/valid-palindrome/
      */
     @CsvSource(
-        value = ["A man, a plan, a canal: Panama:true", "race a car:false", "' ':true", "Do geese see God?:true", "ab_a:false"],
+        value = ["A man, a plan, a canal: Panama:true", "race a car:false", "' ':true", "Do geese see God?:true", "ab_a:true"],
         delimiter = ':'
     )
     @ParameterizedTest
