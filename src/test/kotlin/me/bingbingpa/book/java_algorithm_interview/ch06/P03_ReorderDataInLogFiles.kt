@@ -3,7 +3,7 @@ package me.bingbingpa.book.java_algorithm_interview.ch06
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-class P3_ReorderDataInLogFiles {
+class P03_ReorderDataInLogFiles {
 
     /**
      * 로그를 재정렬하라. 기준은 다음과 같다.
