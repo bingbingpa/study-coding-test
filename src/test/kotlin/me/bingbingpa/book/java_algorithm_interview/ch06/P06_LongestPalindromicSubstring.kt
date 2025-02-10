@@ -3,7 +3,6 @@ package me.bingbingpa.book.java_algorithm_interview.ch06
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
-import kotlin.math.max
 
 class P06_LongestPalindromicSubstring {
 
