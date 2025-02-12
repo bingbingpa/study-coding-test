@@ -9,18 +9,17 @@ import org.junit.jupiter.params.provider.MethodSource
 import java.util.stream.Stream
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class P06_LongestPalindromicSubstring {
+class P07_TwoSum {
 
     /**
      * 덧셈하여 타깃을 만들 수 있는 배열의 두 숫자 인덱스를 리턴하라.
      * Input: nums = [2, 6, 11, 15], target = 8
      * Output: [0, 1]
-     * Explanation: "aba" is also a valid answer.
      * @see <a href="https://leetcode.com/problems/two-sum/"> https://leetcode.com/problems/two-sum/
      */
     @MethodSource("getParameters")
     @ParameterizedTest
-    fun `가장 긴 팰린드롬 부분 문자열`(nums: IntArray, target: Int, expected: IntArray) {
+    fun twoSum(nums: IntArray, target: Int, expected: IntArray) {
         //given & when
         val result = bookSolution(nums, target)
 
