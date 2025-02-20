@@ -50,7 +50,7 @@ private fun solution(nums: IntArray): List<List<Int>> {
     var right: Int
     var sum: Int
     val results = mutableListOf<List<Int>>()
-    Arrays.sort(nums)
+    nums.sort()
     for (i in 0 until nums.size - 2) {
         if (i > 0 && nums[i] == nums[i - 1]) {
             continue
